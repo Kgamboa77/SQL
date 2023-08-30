@@ -1,0 +1,35 @@
+
+/** Fitness: 
+Clothes (20)
+Suppliments (15)
+Shoes (30)
+Dumbells (35)
+Kettle bells (40)
+Jump rope (10)
+Protein Drinks (8)
+Resistance bands (10)
+Yoga mats (20)
+Towels (10)
+Sweat bands (7)
+Gloves (10)
+Water bottles (15)
+**/
+CREATE TABLE fitness (id INTEGER PRIMARY KEY, name TEXT, price INTEGER);
+
+INSERT INTO fitness VALUES (1, "clothes", 20);
+INSERT INTO fitness VALUES (2, "suppliments", 15);
+INSERT INTO fitness VALUES (3, "shoes", 30);
+INSERT INTO fitness VALUES (4,"Dumbells",35);
+INSERT INTO fitness VALUES (5, "kettle bells", 40);
+INSERT INTO fitness VALUES (6, "jump rope", 10);
+INSERT INTO fitness VALUES (7, "protein drinks", 8);
+INSERT INTO fitness VALUES (8, "resistance bands", 10);
+INSERT INTO fitness VALUES (9, "yoga mats", 20);
+INSERT INTO fitness VALUES (10, "towels", 10);
+INSERT INTO fitness VALUES (11, "sweat bands", 7);
+INSERT INTO fitness VALUES (12, "gloves", 10);
+INSERT INTO fitness VALUES (13, "water bottles", 15);
+
+SELECT * FROM fitness ORDER BY price; 
+SELECT price, SUM(price) FROM fitness GROUP BY price; 
+
