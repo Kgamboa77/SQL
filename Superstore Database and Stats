@@ -34,7 +34,7 @@ SELECT AVG(price)
 FROM superstore;
 
 ---show a statistic about the price for items in the catorory of "Kitchen Supplies". 
-SELECT AVG(price) price, 'kitchen supplies'
+SELECT AVG(price) "avg kitchen supplies item category price"
 FROM superstore
 GROUP BY category='kitchen supplies';
 
